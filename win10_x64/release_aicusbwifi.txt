@@ -1,0 +1,642 @@
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.01
+
+  Released By:   liliu
+
+  Release Date:  2021.03.18
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.02
+
+  Released By:   liliu
+
+  Release Date:  2021.06.16
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.03
+
+  Released By:   liliu
+
+  Release Date:  2021.06.28
+
+  Bug Fixed:
+    1. fix rssi get error
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.04
+
+  Released By:   liliu
+
+  Release Date:  2021.06.30
+
+  Bug Fixed:
+    1. fix bug: can't connect to this network
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.05
+
+  Released By:   liliu
+
+  Release Date:  2021.07.20
+
+  Bug Fixed:
+    1. fix bluescreen
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.06
+
+  Released By:   liliu
+
+  Release Date:  2021.07.23
+
+  Bug Fixed:
+    1. fix driver install failed if windows version is 1909 (error code is 39)
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.07
+
+  Released By:   liliu
+
+  Release Date:  2021.07.24
+
+  Bug Fixed:
+    1. fix USB connect and disconnect error
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.08
+
+  Released By:   liliu
+
+  Release Date:  2021.08.04
+
+  Bug Fixed:
+    1. fix bluescreen error
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.09
+
+  Released By:   liliu
+
+  Release Date:  2021.08.08
+
+  Bug Fixed:
+    1. fix ap list not found and wifi disconnect error
+
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.20
+
+  Released By:   liliu
+
+  Release Date:  2021.08.19
+
+  Bug Fixed:
+    1. fix bluescreen
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.21
+
+  Released By:   liliu
+
+  Release Date:  2021.08.23
+
+  Bug Fixed:
+    1. fix wifi scan list null
+    2. add del key
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.22
+
+  Released By:   liliu
+
+  Release Date:  2021.08.24
+
+  Bug Fixed:
+    1. fix hidden ssid
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.23
+
+  Released By:   liliu
+
+  Release Date:  2021.08.26
+
+  Bug Fixed:
+    1. fix bluescreen when connect/disconnect
+
+################################################################################
+
+  Name:          aicusbwifi
+
+  Version:       0.24
+
+  Released By:   liliu
+
+  Release Date:  2021.08.30
+
+  Bug Fixed:
+    1. fix connect cisco failed
+
+################################################################################
+  Name:          aicusbwifi
+
+  Version:       0.24
+
+  Released By:   liliu
+
+  Release Date:  2021.08.31
+
+  Bug Fixed:
+    1. fix wifi icon grayed out in windows taskbar
+
+################################################################################
+  Name:          aicusbwifi
+
+  Version:       0.25
+
+  Released By:   liliu
+
+  Release Date:  2021.09.01
+
+  Bug Fixed:
+    1. Fast wifi iperf 
+
+################################################################################
+  Name:          aicusbwifi
+
+  Version:       0.26
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.06
+
+  Bug Fixed:
+    1. Fast wifi iperf (ac mode)
+    2. fix cpu heavy load in recv path
+
+################################################################################  Name:          aicusbwifi
+
+  Version:       0.27
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.07
+
+  Bug Fixed:
+    1. 11n/11ac/11ax display
+    2. Add re-order, optimize throughput
+
+################################################################################
+  Version:       0.28
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.08
+
+  Bug Fixed:
+    1. rate display
+    2. optimize scan
+
+################################################################################
+  Version:       0.29
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.15
+
+  Update:
+    1. Get appropriate RSSI
+
+################################################################################
+  Version:       0.30
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.18
+
+  Update:
+    1. Optimize scanlist
+
+################################################################################
+  Version:       0.31
+
+  Released By:   bolv
+
+  Release Date:  2021.09.23
+
+  Update:
+    1. Optimize throughput
+
+################################################################################
+  Version:       0.32
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.26
+
+  Update:
+    1. Fix link quality
+
+################################################################################
+  Version:       0.33
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.27
+
+  Update:
+    1. 30s internal scan
+    2. Optimize usb tx
+
+################################################################################
+  Version:       0.34
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.29
+
+  Update:
+    1. Optimize scan process
+
+################################################################################
+  Version:       0.35
+
+  Released By:   dijiaxu
+
+  Release Date:  2021.10.09
+
+  Update:
+    1. Optimize scan process
+    2. Merge AP function
+
+################################################################################
+  Version:       0.36
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.11
+
+  Update:
+    1. Fix bluescreen while restart
+    2. Fix no internet
+
+################################################################################
+  Version:       0.37
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.12
+
+  Update:
+    1. Fix some bluescreen
+    2. Optimize AP process
+
+################################################################################
+  Version:       0.38
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.15
+
+  Update:
+    1. AP 5G band support
+    2. Optimize log print
+
+################################################################################
+  Version:       0.39
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.15
+
+  Update:
+    1. Fix AP start failure
+    2. add WOL_SUPPORT
+
+################################################################################
+  Version:       0.40
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.16
+
+  Update:
+    1. Fix 10s before passphrase input
+
+################################################################################
+  Version:       0.41
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.19
+
+  Update:
+    1. Optimize USB process
+    2. Fix NBL bluescreen
+
+################################################################################
+  Version:       0.42
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.20
+
+  Update:
+    1. Fix potential sta failure after ap stop
+
+################################################################################
+  Version:       0.43
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.23
+
+  Update:
+    1. Optimize ap function
+
+################################################################################
+  Version:       0.44
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.26
+
+  Update:
+    1. Fix basic rate
+    2. Set trace level
+
+################################################################################
+  Version:       0.45
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.28
+
+  Update:
+    1. Fix bluescreen DRIVER_POWER_STATE_FAILURE
+    2. Fix boot fault
+
+################################################################################
+  Version:       0.46
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.29
+
+  Update:
+    1. Fix ap start fail
+
+################################################################################
+  Version:       0.47
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.01
+
+  Update:
+    1. Fix bluescreen DPC_WATCHDOG_VIOLATION(caused by spinlock)
+    2. Add OtaKey
+
+################################################################################
+  Version:       0.48
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.02
+
+  Update:
+    1. Optimize ap process
+    2. Avoid err state caused by unexpected MpHalt
+
+################################################################################
+  Version:       0.49
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.03
+
+  Update:
+    1. Fix eapol tx
+
+################################################################################
+  Version:       0.50
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.08
+
+  Update:
+    1. Fix ap start fail
+
+################################################################################
+  Version:       0.51
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.11
+
+  Update:
+    1. Add ap protection
+    2. Update log info
+
+################################################################################
+  Version:       0.52
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.12
+
+  Update:
+    1. AP disable sgi/ldpc
+    2. Optimize sta for tplink xdr1860
+
+################################################################################
+  Version:       0.53
+
+  Released By:   liliu
+
+  Release Date:  2021.11.18
+
+  Update:
+    1. fix bluescreen: SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
+    2. Update softap for multiple device connections
+
+################################################################################
+  Version:       0.54
+
+  Released By:   liliu
+
+  Release Date:  2021.11.25
+
+  Update:
+    1. fix connection fail if WPA is used
+
+################################################################################
+  Version:       0.55
+
+  Released By:   liliu
+
+  Release Date:  2021.12.07
+
+  Update:
+    1. update scan
+
+################################################################################
+  Version:       0.56
+
+  Released By:   liliu
+
+  Release Date:  2021.12.16
+
+  Update:
+    1. add preferred band support
+
+################################################################################
+  Version:       0.57
+
+  Released By:   liliu
+
+  Release Date:  2021.12.24
+
+  Update:
+    1. modify preferred band default value "Prefer 5G Band"
+    2. fix phytype error when sta connect to ap in b/g only mode
+    3. add ap reorder support
+
+################################################################################
+  Version:       0.57
+
+  Released By:   liliu
+
+  Release Date:  2021.12.29
+
+  Update:
+    1. Optimize scan if start ap
+
+################################################################################
+  Version:       0.58
+
+  Released By:   liliu
+
+  Release Date:  2022.01.02
+
+  Update:
+    1. Add p2p miracast support
+    2. Add 80211n/ac/ax mode option for 5G Band
+    3. Update ap list sort mode when enable "Prefer 24G/5G Band"
+    4. Fix disconnect error when sta connect to some ap
+
+################################################################################
+  Version:       0.59
+
+  Released By:   liliu
+
+  Release Date:  2022.01.05
+
+  Update:
+    1. Fix disconnect error when sta connect to some ap
+
+################################################################################
+  Version:       0.60
+
+  Released By:   liliu
+
+  Release Date:  2022.01.22
+
+  Update:
+    1. Update miracast, fix windows desktop connection failure
+    2. Update softap, sta and spftap work at same channel
+
+################################################################################
+  Version:       0.61
+
+  Released By:   liliu
+
+  Release Date:  2022.02.24
+
+  Update:
+    1. Fix TKIP error
+
+################################################################################
+  Version:       0.62
+
+  Released By:   liliu
+
+  Release Date:  2022.03.14
+  Update:
+    1. Update reorder for softap
+
+################################################################################
+  Version:       0.63
+
+  Released By:   liliu
+
+  Release Date:  2022.04.15
+  Update:
+    1. Add Workaround5G80M
+
+################################################################################
+  Version:       0.64
+
+  Released By:   liliu
+
+  Release Date:  2022.04.24
+  Update:
+    1. Add HeTxMcs support
+
+################################################################################
+  Version:       0.65
+
+  Released By:   liliu
+
+  Release Date:  2022.04.24
+  Update:
+    1. Fix add if cfm error
+
+################################################################################

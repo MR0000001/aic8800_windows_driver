@@ -1,0 +1,213 @@
+; /****************************************************************************
+; ** DEVELOPED BY AIC **
+; ****************************************************************************/
+[Version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = "AIC"
+LayoutFile  = layout.inf
+CatalogFile = aicusbwifi.cat
+DriverVer = 05/15/2022,13.21.4.178
+PnpLockdown = 1
+
+[Manufacturer]
+%AIC%     = AIC, NTx86, NTamd64
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+
+[AIC.NTx86]
+; DisplayName                   Section         DeviceID
+; -----------                   -------         --------
+%AIC.DeviceDesc_8888%         = aic.ndi,        USB\VID_A69C&PID_8801&MI_02
+
+
+[AIC.NTamd64]
+; DisplayName                   Section         DeviceID
+; -----------                   -------         --------
+%AIC.DeviceDesc_8888%         = aic.ndi,        USB\VID_A69C&PID_8801&MI_02
+
+[aic.ndi.NTx86]
+Include=netvwifibus.inf
+Needs=VWiFiBus.CopyFiles
+Characteristics = 0x84
+BusType         = 5
+AddReg          = aic.reg
+CopyFiles       = aic.CopyFiles
+*IfType         = 71            ; IF_TYPE_IEEE80211
+*MediaType      = 16            ; NdisMediumNative802_11
+*PhysicalMediaType = 9          ; NdisPhysicalMediumNative802_11
+
+[aic.ndi.NTAMD64]
+Include=netvwifibus.inf
+Needs=VWiFiBus.CopyFiles
+Characteristics = 0x84
+BusType         = 5
+AddReg          = aic.reg
+CopyFiles       = aic.CopyFiles
+*IfType         = 71            ; IF_TYPE_IEEE80211
+*MediaType      = 16            ; NdisMediumNative802_11
+*PhysicalMediaType = 9          ; NdisPhysicalMediumNative802_11
+
+[aic.ndi.NTx86.Services]
+Include=netvwifibus.inf
+Needs=VWiFiBus.Services
+AddService = aicusbwifi, 2, aic.Service, aic.EventLog
+
+[aic.ndi.NTAMD64.Services]
+Include=netvwifibus.inf
+Needs=VWiFiBus.Services
+AddService = aicusbwifi, 2, aic.Service, aic.EventLog
+
+[aic.ndi.NTx86.HW]
+Include=netvwifibus.inf
+Needs=VWiFiBus.PnPFilterRegistration.HW
+
+[aic.ndi.NTAMD64.HW]
+Include=netvwifibus.inf
+Needs=VWiFiBus.PnPFilterRegistration.HW
+
+[aic.reg]
+HKR, Ndi,                         Service,    0, "aicusbwifi"
+
+HKR, Ndi\Interfaces,              UpperRange, 0, "ndis5"
+HKR, Ndi\Interfaces,              LowerRange, 0, "wlan,ethernet,vwifi"
+
+HKR, Ndi\params\*ReceiveBuffers,  ParamDesc,  0, "%ReceiveBuffers%"
+HKR, Ndi\params\*ReceiveBuffers,  default,    0, "128"
+HKR, Ndi\params\*ReceiveBuffers,  min,        0, "1"
+HKR, Ndi\params\*ReceiveBuffers,  max,        0, "00000128"
+HKR, Ndi\params\*ReceiveBuffers,  step,       0, "1"
+HKR, Ndi\params\*ReceiveBuffers,  Base,       0, "10"
+HKR, Ndi\params\*ReceiveBuffers,  type,       0, "int"
+
+HKR, Ndi\params\*TransmitBuffers, ParamDesc,  0, "%TransmitBuffers%"
+HKR, Ndi\params\*TransmitBuffers, default,    0, "159"
+HKR, Ndi\params\*TransmitBuffers, min,        0, "1"
+HKR, Ndi\params\*TransmitBuffers, max,        0, "00000512"
+HKR, Ndi\params\*TransmitBuffers, step,       0, "1"
+HKR, Ndi\params\*TransmitBuffers, Base,       0, "10"
+HKR, Ndi\params\*TransmitBuffers, type,       0, "int"
+
+HKR, Ndi\Params\RoamingPreferredBandType,      ParamDesc,   0, %PREFERRED_BAND_STR%
+HKR, Ndi\Params\RoamingPreferredBandType,      Type,        2, "enum"
+HKR, Ndi\Params\RoamingPreferredBandType,      Default,     2, "2"
+HKR, Ndi\Params\RoamingPreferredBandType,      Optional,    2, "0"
+HKR, Ndi\Params\RoamingPreferredBandType\enum, "0",         0, "1. "%NO_PREFERECE_STR%
+HKR, Ndi\Params\RoamingPreferredBandType\enum, "1",         0, "2. "%PREFER_24_BAND_STR%
+HKR, Ndi\Params\RoamingPreferredBandType\enum, "2",         0, "3. "%PREFER_52_BAND_STR%
+
+
+HKR, Ndi\Params\IEEE11nMode,                   ParamDesc,   0, %11N_AC_AX_MODE%
+HKR, Ndi\Params\IEEE11nMode,                   Type,        0, "enum"
+HKR, Ndi\Params\IEEE11nMode,                   Default,     0, "1"
+HKR, Ndi\Params\IEEE11nMode,                   Optional,    0, "0"
+HKR, Ndi\Params\IEEE11nMode\enum,              "0",         0, "1. "%AC_AX_DISABLED_STR%
+HKR, Ndi\Params\IEEE11nMode\enum,              "1",         0, "2. "%AC_AX_ENABLED_STR%
+
+HKR, Ndi\Params\Workaround5G80M,                   ParamDesc,   0, %Workaround5G80M%
+HKR, Ndi\Params\Workaround5G80M,                   Type,        0, "enum"
+HKR, Ndi\Params\Workaround5G80M,                   Default,     0, "1"
+HKR, Ndi\Params\Workaround5G80M,                   Optional,    0, "0"
+HKR, Ndi\Params\Workaround5G80M\enum,              "0",         0, %Workaround5G80M_Disable%
+HKR, Ndi\Params\Workaround5G80M\enum,              "1",         0, %Workaround5G80M_Enable%
+
+HKR, Ndi\Params\HeTxMcsMap,                   ParamDesc,   0, %HeTxMcsMap%
+HKR, Ndi\Params\HeTxMcsMap,                   Type,        0, "enum"
+HKR, Ndi\Params\HeTxMcsMap,                   Default,     0, "1"
+HKR, Ndi\Params\HeTxMcsMap\enum,              "1",         0, %HeTxMcsSupport9%
+HKR, Ndi\Params\HeTxMcsMap\enum,              "2",         0, %HeTxMcsSupport11%
+
+HKR, Ndi\Params\TxAdaptivityEn,                   ParamDesc,   0, %TxAdaptivityEn%
+HKR, Ndi\Params\TxAdaptivityEn,                   Type,        0, "enum"
+HKR, Ndi\Params\TxAdaptivityEn,                   Default,     0, "0"
+HKR, Ndi\Params\TxAdaptivityEn,                   Optional,    0, "0"
+HKR, Ndi\Params\TxAdaptivityEn\enum,              "0",         0, %TxAdaptivityDisabLe%
+HKR, Ndi\Params\TxAdaptivityEn\enum,              "1",         0, %TxAdaptivityENabLe%
+
+[aic.Service]
+DisplayName     = %AIC.Service.DispName%
+ServiceType     = 1             ;SERVICE_KERNEL_DRIVER
+StartType       = 3             ;SERVICE_DEMAND_START
+ErrorControl    = 1             ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\aicusbwifi.sys
+LoadOrderGroup  = NDIS
+
+[aic.EventLog]
+AddReg = aic.AddEventLog.reg
+
+[aic.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[aic.CopyFiles]
+aicusbwifi.sys,,,2
+
+[SourceDisksNames]
+1 = %DiskDescription%,aicusbwifi.sys,,
+
+[SourceDisksFiles]
+aicusbwifi.sys = 1
+;
+
+
+[DestinationDirs]
+;aic.CopyFiles          = 12
+;DefaultDestDirs            = 11
+DefaultDestDir            = 12
+CoInstaller_CopyFiles	   = 11
+
+;-------------- WDF Coinstaller installation
+
+[aic.ndi.NTAMD64.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+;
+
+
+;[SourceDisksFiles]
+;aicusbwifi.sys = 1
+;WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1,, ; make sure the number matches with SourceDisksNames
+
+[CoInstaller_AddReg]
+;
+
+
+[aic.ndi.NTAMD64.Wdf]
+KmdfService = aicusbwifi, aic_wdfsect
+
+[aic_wdfsect]
+KmdfLibraryVersion = 1.15
+
+;---------------------------------------------------------------;
+
+[Strings]
+Msft                         = "Microsoft"
+AIC					         = "AIC Corp"
+AIC.DeviceDesc_8888          = "AIC USB WiFi"
+AIC.Service.DispName         = "AIC 802.11 Wireless Device Driver"
+DiskDescription              = "AIC USB WiFi Driver"
+TransmitBuffers              = "Transmit Buffers"
+ReceiveBuffers               = "Receive Buffers"
+PREFERRED_BAND_STR           = "Preferred Band"
+NO_PREFERECE_STR             = "No Preference"
+PREFER_24_BAND_STR           = "Prefer 2.4GHz band"
+PREFER_52_BAND_STR           = "Prefer 5GHz band"
+11N_AC_AX_MODE               = "802.11n/ac/ax Wireless Mode for 5GHz Band"
+AC_AX_DISABLED_STR           = "802.11n"
+AC_AX_ENABLED_STR            = "802.11n/ac/ax"
+Workaround5G80M              = "AIC Workaround for 5G 80M"
+Workaround5G80M_Enable       = "Enable Workaround for 5G 80M"
+Workaround5G80M_Disable      = "Disable Workaround for 5G 80M"
+HeTxMcsMap                   = "He Tx Msc Map"
+HeTxMcsSupport9              = "He Tx Msc9"
+HeTxMcsSupport11             = "He Tx Msc11"
+TxAdaptivityEn               = "Aic Tx Adaptivity"
+TxAdaptivityDisabLe          = "Disable Tx Adaptivity"
+TxAdaptivityEnabLe           = "Enable Tx Adaptivity"
+OtaKey                       = "da681918c11078801e432552b70bd4a95fad9b6d"
+

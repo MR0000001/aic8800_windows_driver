@@ -1,0 +1,743 @@
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.01
+
+  Released By:   liliu
+
+  Release Date:  2021.06.04
+
+  Bug Fixed:
+    1. bluescreen error: PAGE_FAULT_IN_NONPAGED_AREA
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.02
+
+  Released By:   liliu
+
+  Release Date:  2021.06.16
+
+  Bug Fixed:
+    1. update usb init
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.03
+
+  Released By:   liliu
+
+  Release Date:  2021.06.28
+
+  New Feature:
+    1. add u03 support
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.04
+
+  Released By:   liliu
+
+  Release Date:  2021.06.30
+
+  New Feature:
+    1. update wifi fw
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.05
+
+  Released By:   liliu
+
+  Release Date:  2021.07.20
+
+  New Feature:
+    1. update wifi fw
+    2. fix bluescreen when reboot
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.06
+
+  Released By:   liliu
+
+  Release Date:  2021.07.23
+
+  New Feature:
+    1. fix driver install failed if windows version is 1909 (error code is 39)
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.07
+
+  Released By:   liliu
+
+  Release Date:  2021.07.24
+
+  New Feature:
+    1. fix USB connect and disconnect error
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.08
+
+  Released By:   liliu
+
+  Release Date:  2021.07.30
+
+  Bug Fixed:
+    1. update bt for U03 and U04
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.09
+
+  Released By:   liliu
+
+  Release Date:  2021.08.04
+
+  Bug Fixed:
+    1. update bt for U03 and U04
+    2. Update wifi fw 
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.10
+
+  Released By:   liliu
+
+  Release Date:  2021.08.08
+
+  Bug Fixed:
+    1. Update wifi fw
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.20
+
+  Released By:   liliu
+
+  Release Date:  2021.08.19
+
+  Bug Fixed:
+    1. Update wifi fw, update usb suspend
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.21
+
+  Released By:   liliu
+
+  Release Date:  2021.08.23
+
+  Bug Fixed:
+    1. Update wifi fw, update scan dbg
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.22
+
+  Released By:   liliu
+
+  Release Date:  2021.08.24
+
+  Bug Fixed:
+    1. Update bt , fix first pair but no profile
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.23
+
+  Released By:   liliu
+
+  Release Date:  2021.08.24
+
+  Bug Fixed:
+    1. Update bt , fix lc state error
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.23
+
+  Released By:   liliu
+
+  Release Date:  2021.08.24
+
+  Bug Fixed:
+    1. Update wifi, fix error "Can't Connect To This Network"
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.24
+
+  Released By:   liliu
+
+  Release Date:  2021.08.30
+
+  Bug Fixed:
+    1. Update bt, fix bt file transfer failed
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.25
+
+  Released By:   liliu
+
+  Release Date:  2021.08.31
+
+  Bug Fixed:
+    1. Update bt, fix turn on/off bt error
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.26
+
+  Released By:   liliu
+
+  Release Date:  2021.09.01
+
+  Bug Fixed:
+    1. Update wifi and bt
+    2. Fast wifi connection and ble connection
+
+
+################################################################################
+
+  Name:          aicloadfw
+
+  Version:       0.27
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.06
+
+  Bug Fixed:
+    1. Update wifi
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.28
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.07
+
+  Bug Fixed:
+    1. Optimize throughput
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.29
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.14
+
+  Bug Fixed:
+    1. Optimize throughput
+    2. Fix bt error
+    3. Compatible pwrofst
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.30
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.15
+
+  Update:
+    1. Update bt iso
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.31
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.18
+
+  Update:
+    1. Update bt msbc
+    2. WEP support
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.32
+
+  Released By:   bolv
+
+  Release Date:  2021.09.23
+
+  Update:
+    1. Optimize USB buffer
+    2. Optimize rx aggr
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.33
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.09.26
+
+  Update:
+    1. Optimize USB buffer
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.34
+
+  Released By:   bolv
+
+  Release Date:  2021.09.26
+
+  Update:
+    1. Optimize USB processing
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.35
+
+  Released By:   bolv
+
+  Release Date:  2021.09.29
+
+  Update:
+    1. Optimize USB processing fc0
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.36
+
+  Released By:   bolv
+
+  Release Date:  2021.09.29
+
+  Update:
+    1. Optimize USB processing fc1
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.37
+
+  Released By:   bolv
+
+  Release Date:  2021.09.29
+
+  Update:
+    1. Optimize BT/BLE coex
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.38
+
+  Released By:   dijiaxu
+
+  Release Date:  2021.10.09
+
+  Update:
+    1. Fix assert
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.39
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.12
+
+  Update:
+    1. Optimize wifi tx process
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.40
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.15
+
+  Update:
+    1. Optimize USB process
+    2. Optimize scan time
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.41
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.15
+
+  Update:
+    1. Add bt dbg info
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.42
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.19
+
+  Update:
+    1. Optimize USB process
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.43
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.23
+
+  Update:
+    1. Optimize ap process
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.44
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.25
+
+  Update:
+    1. Fix hostif bug
+    2. Add csa valid check
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.45
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.10.28
+
+  Update:
+    1. Fix ap fake connection
+    2. Fix assert & fault
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.46
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.01
+
+  Update:
+    1. Fix potential boot fault
+    2. Add OtaKey
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.47
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.02
+
+  Update:
+    1. Fix ap deauth problem
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.48
+
+  Released By:   zhongyaosong
+
+  Release Date:  2021.11.11
+
+  Update:
+    1. Sync to latest version
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.49
+
+  Released By:   liliu
+
+  Release Date:  2021.11.19
+
+  Update:
+    1. Sync to latest version, update ap
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.50
+
+  Released By:   liliu
+
+  Release Date:  2021.11.25
+
+  Update:
+    1. Sync to latest version, update ap, fix connect ap fail
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.51
+
+  Released By:   liliu
+
+  Release Date:  2021.12.07
+
+  Update:
+    1. Sync to latest version
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.52
+
+  Released By:   liliu
+
+  Release Date:  2021.12.16
+
+  Update:
+    1. Sync to latest version
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.53
+
+  Released By:   liliu
+
+  Release Date:  2021.12.24
+
+  Update:
+    1. Sync to latest version
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.54
+
+  Released By:   liliu
+
+  Release Date:  2021.12.29
+
+  Update:
+    1. Sync bt to latest version
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.55
+
+  Released By:   liliu
+
+  Release Date:  2022.01.02
+
+  Update:
+    1. Sync wifi to latest version
+
+
+################################################################################
+  Name:          aicloadfw
+
+  Version:       0.56
+
+  Released By:   liliu
+
+  Release Date:  2022.01.19
+
+  Update:
+    1. Sync wifi to latest version
+       fix scan count error, disconnect or no internet error
+    2. Sync bt to latest version
+
+################################################################################
+ Name:          aicloadfw
+
+  Version:       0.57
+
+  Released By:   liliu
+
+  Release Date:  2022.01.22
+
+  Update:
+    1. Sync wifi to latest version
+
+################################################################################
+ Name:          aicloadfw
+
+  Version:       0.58
+
+  Released By:   liliu
+
+  Release Date:  2022.02.15
+
+  Update:
+    1. Fix audio lag of bluetooth
+    2. Sync wifi to latest version
+
+################################################################################
+ Name:          aicloadfw
+
+  Version:       0.59
+
+  Released By:   liliu
+
+  Release Date:  2022.03.14
+
+  Update:
+    1. Fix bt connect error, sync bt to latest version
+    2. Sync wifi to latest version
+
+################################################################################
+ Name:          aicloadfw
+
+  Version:       0.60
+
+  Released By:   liliu
+
+  Release Date:  2022.03.28
+
+  Update:
+    1. Fix bt assert error, sync bt to latest version
+    2. Sync wifi to latest version
+
+################################################################################ 
+Name:          aicloadfw
+
+  Version:       0.61
+
+  Released By:   liliu
+
+  Release Date:  2022.04.15
+
+  Update:
+    1. Sync wifi to latest version
+
+################################################################################
+Name:          aicloadfw
+
+  Version:       0.62
+
+  Released By:   liliu
+
+  Release Date:  2022.04.24
+
+  Update:
+    1. Sync wifi and bt to latest version
+
+################################################################################
+Name:          aicloadfw
+
+  Version:       0.63
+
+  Released By:   liliu
+
+  Release Date:  2022.04.25
+
+  Update:
+    1. Sync wifi latest version, fix wifi panic
+
+################################################################################
